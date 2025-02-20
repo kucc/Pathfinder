@@ -1,3 +1,5 @@
+import daisyui from "daisyui";
+import themes from "daisyui/src/theming/themes";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -14,5 +16,15 @@ export default {
       },
     },
   },
-  plugins: [],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...themes["light"],
+          primary: "#c3201f",
+        },
+      },
+    ],
+  },
+  plugins: [daisyui],
 } satisfies Config;
