@@ -1,7 +1,9 @@
+import MainImage from "./components/MainImage";
+
 export default function Home() {
   return (
-    <div className="flex h-full flex-col items-center justify-between gap-4 px-12 pb-8 pt-32">
-      <div className="flex h-full flex-col items-center gap-8">
+    <div className="flex h-full w-full flex-col items-center justify-between gap-4 px-12 pb-8 pt-32">
+      <div className="flex h-full w-full flex-col items-center gap-8 overflow-hidden">
         <h1 className="font-cute flex flex-col items-center text-center text-3xl font-bold">
           나에게 맞는
           <div className="text-4xl">
@@ -9,7 +11,7 @@ export default function Home() {
             은?
           </div>
         </h1>
-        <img className="size-64 object-contain" src="/mascot.png" />
+        <MainImage />
       </div>
       <button className="btn btn-primary w-full">시작하기</button>
     </div>
