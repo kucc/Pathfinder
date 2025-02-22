@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "classcat": "^5.0.5",
     "daisyui": "^4.12.23",
     "framer-motion": "^12.4.5",
     "next": "15.1.7",
