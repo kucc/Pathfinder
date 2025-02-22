@@ -4,7 +4,7 @@ export default function Loading() {
   return (
     <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-base-100">
       <div className="h-64 w-full overflow-hidden px-16">
-        <MainImage speed={2} />
+        <MainImage speed={2} isLoaded={true} setIsLoaded={() => {}} />
       </div>
       <div className="text-center text-2xl font-bold">
         결과를 분석하고 있습니다.
