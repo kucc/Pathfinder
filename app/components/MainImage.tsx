@@ -1,11 +1,12 @@
 "use client";
 
+import { unique } from "@/public/utils/unique";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { RESULT } from "../constant";
 
 export default function MainImage() {
-  const items = Object.values(RESULT).map((result) => result.image);
+  const items = unique(Object.values(RESULT).map((result) => result.image));
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
