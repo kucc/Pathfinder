@@ -436,8 +436,10 @@ export const CAREER: {
     description: string;
     activity: {
       title: string;
-      type: "session" | "event";
-    };
+      type: "session" | "event" | "study";
+      semester: string;
+      description: string;
+    }[];
     emoji: string;
   };
 } = {
@@ -446,7 +448,22 @@ export const CAREER: {
     emoji: "🚀",
     summary: "웹 화면을 만드는 마법사",
     title: "프론트엔드 개발자",
-    activity: { title: "처음부터 시작하는 웹 프론트 엔드", type: "session" },
+    activity: [
+      {
+        title: "처음부터 시작하는 웹 프론트엔드 기초",
+        type: "session",
+        semester: "24-1",
+        description:
+          "HTML, CSS, JavaScript의 기본 개념을 익히고 React를 활용해 실습을 진행했습니다.",
+      },
+      {
+        title: "리액트...문서 췍!!!",
+        type: "session",
+        semester: "24-2",
+        description:
+          "리액트 공식 문서를 함께 살펴보며 작동 원리와 실무 활용법을 학습했습니다.",
+      },
+    ],
     description:
       "**프론트엔드 개발자**는 우리가 보는 웹사이트나 앱 화면을 만들고, 상호작용을 설계하는 역할을 해요! 🖥️ **빠른 속도**, **반응형 디자인**, **접근성**까지 고려해 UX를 개선하는 직군이에요. 🚀",
   },
@@ -455,10 +472,21 @@ export const CAREER: {
     emoji: "📱",
     summary: "손안의 세상을 만드는 창조자",
     title: "모바일 앱 개발자",
-    activity: {
-      title: "리액트 네이티브를 이용한 앱 개발 입문",
-      type: "session",
-    },
+    activity: [
+      {
+        title: "오순도순 Flutter 스터디",
+        type: "study",
+        semester: "22-2",
+        description: "Flutter 기본 개념을 학습하고 실습을 진행했습니다.",
+      },
+      {
+        title: "리액트 네이티브를 이용한 앱 개발 입문",
+        type: "session",
+        semester: "22-1",
+        description:
+          "리액트 네이티브를 활용해 간단한 앱을 개발하고 설치까지 진행했습니다.",
+      },
+    ],
     description:
       "**모바일 앱 개발자**는 스마트폰에서 동작하는 앱을 만들어요! 📱 **React Native, Flutter** 또는 **네이티브 기술**을 활용해 최적화된 앱을 개발해요. 🚀",
   },
@@ -467,7 +495,22 @@ export const CAREER: {
     emoji: "🔒",
     summary: "디지털 세상의 수호자",
     title: "보안 전문가",
-    activity: { title: "Pre BOB 맛보기", type: "session" },
+    activity: [
+      {
+        title: "정뾰안과 친해지기",
+        type: "session",
+        semester: "23-2",
+        description:
+          "정보보안 개념을 익히고, Linux 및 웹 보안 취약점을 실습하며 학습했습니다.",
+      },
+      {
+        title: "시스템 해킹(포너블) 공부",
+        type: "study",
+        semester: "23-2",
+        description:
+          "드림핵 로드맵을 따라 시스템 해킹과 취약점 분석을 공부했습니다.",
+      },
+    ],
     description:
       "**보안 전문가**는 해킹으로부터 시스템과 데이터를 보호하는 역할을 해요! 🔒 **취약점 분석, 암호학, 침해 대응** 기술을 연구하며 보안 위협에 대응하는 직군이에요. ⚔️",
   },
@@ -476,7 +519,22 @@ export const CAREER: {
     emoji: "📊",
     summary: "데이터 속 숨겨진 비밀을 찾는 탐험가",
     title: "데이터 과학자",
-    activity: { title: "R 데이터 분석 기초", type: "session" },
+    activity: [
+      {
+        title: "R 데이터 분석 기초",
+        type: "session",
+        semester: "23-2",
+        description:
+          "R을 활용한 다양한 데이터 분석 기법과 회귀·다변량·범주형 데이터 분석을 학습했습니다.",
+      },
+      {
+        title: "내가 데이터분석을 아르켜줄게~",
+        type: "session",
+        semester: "24-2",
+        description:
+          "모바일 서비스 분석 방법론을 배우고, 가설 설정 및 검증 방법을 익혔습니다.",
+      },
+    ],
     description:
       "**데이터 과학자**는 데이터를 분석하고 의미 있는 인사이트를 도출하는 역할을 해요! 📊 **통계, 머신러닝, 데이터 시각화** 기술을 활용해 기업의 의사결정을 돕는 직군이에요. 🔍",
   },
@@ -485,7 +543,22 @@ export const CAREER: {
     emoji: "🤖",
     summary: "기계를 똑똑하게 만드는 마법사",
     title: "인공지능(AI) 개발자",
-    activity: { title: "컴퓨터한테 말 가르치는 법", type: "session" },
+    activity: [
+      {
+        title: "컴퓨터한테 말 가르치는 법",
+        type: "session",
+        semester: "24-1",
+        description:
+          "자연어처리 기초 개념과 딥러닝 모델 학습 과정을 살펴보았습니다.",
+      },
+      {
+        title: "AttentionK: 자연어처리 논문 리뷰 스터디",
+        type: "study",
+        semester: "24-1",
+        description:
+          "최신 자연어처리 논문을 리뷰하고, 딥러닝 기반 NLP 코딩을 실습했습니다.",
+      },
+    ],
     description:
       "**AI 개발자**는 **컴퓨터가 스스로 학습하고 판단할 수 있도록 만드는 일**을 해요! 🤖 **딥러닝, 머신러닝**을 활용해 다양한 분야에서 **AI 모델을 개발**하는 직군이에요. 🚀",
   },
@@ -494,7 +567,21 @@ export const CAREER: {
     emoji: "🌐",
     summary: "인터넷의 길을 여는 설계자",
     title: "네트워크(클라우드) 엔지니어",
-    activity: { title: "스프링 부트로 배우는 서버 기초", type: "session" },
+    activity: [
+      {
+        title: "스프링 부트로 배우는 서버 기초",
+        type: "session",
+        semester: "23-2",
+        description: "스프링 부트를 활용해 서버의 기초 개념을 학습했습니다.",
+      },
+      {
+        title: "찍어 먹는 개발의 세계",
+        type: "session",
+        semester: "23-2",
+        description:
+          "백엔드, 클라우드, 데이터베이스, 데브옵스를 포함한 다양한 개발 분야에 대한 기본적인 개념을 소개하는 활동이었습니다.",
+      },
+    ],
     description:
       "**네트워크(클라우드) 엔지니어**는 **인터넷이 원활하게 동작하도록 서버와 네트워크 환경을 구축**하는 역할을 해요! 🌐 **AWS, GCP** 같은 클라우드 기술을 활용하며 **보안과 최적화**를 고민하는 직군이에요. 🔧",
   },
@@ -503,10 +590,22 @@ export const CAREER: {
     emoji: "🎮",
     summary: "즐거움을 코딩하는 예술가",
     title: "게임 개발자",
-    activity: {
-      title: "Unity로 FPS 멀티플레이 좀비 게임 만들기",
-      type: "session",
-    },
+    activity: [
+      {
+        title: "Unity로 FPS 멀티플레이 좀비 게임 만들기",
+        type: "session",
+        semester: "24-1",
+        description:
+          "Unity를 활용한 3D 게임 개발과 멀티플레이 구현을 실습했습니다.",
+      },
+      {
+        title: "Unity로 만드는 FPS 멀티플레이 게임",
+        type: "session",
+        semester: "23-2",
+        description:
+          "Unity로 3D 게임 개발 기초를 익히고, 네트워크 개념을 접목한 멀티플레이를 구현했습니다.",
+      },
+    ],
     description:
       "**게임 개발자**는 우리가 즐기는 게임을 직접 만드는 역할을 해요! 🎮 **Unity, Unreal Engine**을 활용해 게임을 설계하고 개발하는 직군이에요. 🕹️",
   },
@@ -515,7 +614,21 @@ export const CAREER: {
     emoji: "⚙️",
     summary: "보이지 않는 곳에서 세상을 움직이는 엔지니어",
     title: "백엔드 개발자",
-    activity: { title: "씹어먹는 백엔드의 세계", type: "session" },
+    activity: [
+      {
+        title: "씹어먹는 백엔드의 세계",
+        type: "session",
+        semester: "24-1",
+        description:
+          "백엔드 개발자의 기술을 탐색하고, 실습을 통해 직접 개발을 경험했습니다.",
+      },
+      {
+        title: "백엔드를 배워보자",
+        type: "session",
+        semester: "24-2",
+        description: "FastAPI를 기반으로 백엔드 개발 기초 개념을 학습했습니다.",
+      },
+    ],
     description:
       "**백엔드 개발자**는 **웹사이트와 앱이 원활하게 동작하도록 서버를 개발**하는 역할을 해요! 💾 **FastAPI, Node.js, Spring Boot** 등을 활용해 **데이터 처리와 보안**을 담당하는 직군이에요. ⚙️",
   },
@@ -524,7 +637,22 @@ export const CAREER: {
     emoji: "🎨",
     summary: "감각을 그려내는 예술가",
     title: "디자이너",
-    activity: { title: "영상편집을 위한 영차영차", type: "session" },
+    activity: [
+      {
+        title: "쿠씨톤",
+        type: "event",
+        semester: "매 학기",
+        description:
+          "KUCC 교내 해커톤으로, 기획, 개발, 디자인까지 모두 해볼 수 있는 활동입니다.",
+      },
+      {
+        title: "나만의 작고 소중한 UI 컴포넌트 라이브러리 만들기",
+        type: "session",
+        semester: "24-1",
+        description:
+          "예쁘고 재사용 가능한 자신만의 웹 UI 컴포넌트를 디자인 및 개발해보는 활동이었습니다.",
+      },
+    ],
     description:
       "**디자이너**는 **제품이나 서비스의 시각적 요소와 UX를 설계**하는 역할을 해요! 🎨 **Figma, Photoshop** 등을 활용해 **직관적이고 아름다운 디자인**을 만드는 직군이에요. ✨",
   },
@@ -533,7 +661,15 @@ export const CAREER: {
     emoji: "📝",
     summary: "제품을 이끌어나가는 조직자",
     title: "프로젝트 매니저(PM)",
-    activity: { title: "쿠씨톤", type: "event" },
+    activity: [
+      {
+        title: "쿠씨톤",
+        type: "event",
+        semester: "매 학기",
+        description:
+          "KUCC 교내 해커톤으로, 기획, 개발, 디자인까지 모두 해볼 수 있는 활동입니다.",
+      },
+    ],
     description:
       "**PM(Product Manager)**은 **제품 개발의 방향을 정하고, 팀을 이끌어 성공적인 서비스를 만드는 역할**을 해요! 🚀 **데이터 기반 의사결정**을 내리고, **기획·디자인·개발 팀과 협업**하는 직군이에요. 📊",
   },

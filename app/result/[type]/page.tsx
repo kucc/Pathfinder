@@ -44,12 +44,19 @@ export default async function Result({
             KUCC에서 진행된 {result.title} 관련 활동
           </div>
 
-          <div className="flex items-center justify-start gap-2 text-center text-sm font-bold">
-            <div className="badge badge-primary badge-outline">
-              {activityToKorean(result.activity.type)}
-            </div>
-            {result.activity.title}
-          </div>
+          <ul className="flex flex-col gap-2 break-keep px-2">
+            {result.activity.map((activity, index) => (
+              <li key={index} className="flex flex-col gap-1">
+                <div className="flex items-center justify-start gap-1 text-center text-sm font-bold">
+                  <div className="badge badge-primary badge-outline badge-sm">
+                    {activity.semester} {activityToKorean(activity.type)}
+                  </div>
+                  {activity.title}
+                </div>
+                <p className="text-sm">{activity.description}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
