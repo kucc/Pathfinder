@@ -1,12 +1,12 @@
 "use client";
 
-import { unique } from "@/public/utils/unique";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useEffect, useState } from "react";
-import { RESULT } from "../constant";
+import { CAREER } from "../constant";
 
 export default function MainImage({ speed = 1 }: { speed?: number }) {
-  const items = unique(Object.values(RESULT).map((result) => result.image));
+  const items = Object.values(CAREER).map((career) => career.image);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
@@ -39,9 +39,11 @@ export default function MainImage({ speed = 1 }: { speed?: number }) {
           }}
           className="absolute h-full w-full rounded-lg"
         >
-          <img
+          <Image
             src={items[selectedIndex]}
+            alt="IT 직군 이미지"
             className="h-full w-full object-contain"
+            fill
           />
         </motion.div>
       </AnimatePresence>
