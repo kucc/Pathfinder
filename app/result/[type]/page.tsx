@@ -1,5 +1,5 @@
 import { CAREER } from "@/app/constant";
-import { activityToKorean } from "@/public/utils/toKorean";
+import { activityToKorean } from "@/utils/toKorean";
 import { notFound } from "next/navigation";
 import Contacts from "./Contacts";
 
