@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Loading from "../components/Loading";
 import Process from "../components/Process";
 import Step from "../components/Step";
@@ -14,26 +14,16 @@ export default function Test() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
-  const handleNext = (behavior: Behavior) => {
-    setBehaviors((prev) => [...prev, behavior]);
-
-    if (step < QUESTION.length - 1) {
-      setStep((step) => step + 1);
-    } else {
-      handleLoading();
-    }
-  };
-
-  const calculateResult = (result: Result): string => {
+  const calculateResult = useCallback((result: Result): string => {
     const EI = result.E > result.I ? "E" : "I";
     const SN = result.N > result.S ? "N" : "S";
     const TF = result.F > result.T ? "F" : "T";
     const JP = result.J > result.P ? "J" : "P";
 
     return `${EI}${SN}${TF}${JP}`;
-  };
+  }, []);
 
-  const handleLoading = () => {
+  const handleLoading = useCallback(() => {
     setLoading(true);
     const goToResult = () => {
       const result = behaviors.reduce(
@@ -59,24 +49,42 @@ export default function Test() {
     };
 
     setTimeout(goToResult, 3000);
-  };
+  }, [behaviors, calculateResult, router]);
 
-  const back = () => {
+  const handleNext = useCallback(
+    (behavior: Behavior) => {
+      setBehaviors((prev) => [...prev, behavior]);
+
+      if (step < QUESTION.length - 1) {
+        setStep((step) => step + 1);
+      } else {
+        handleLoading();
+      }
+    },
+    [handleLoading, step],
+  );
+
+  const back = useCallback(() => {
+    if (step === 0) return;
     setStep((step) => step - 1);
     setBehaviors((prev) => prev.slice(0, -1));
-  };
+  }, [step]);
 
   useEffect(() => {
-    window.addEventListener("keydown", (e) => {
+    const backEvent = (e: KeyboardEvent) => {
       if (e.key === "Backspace") {
         back();
       }
-    });
-  }, []);
+    };
+    window.addEventListener("keydown", backEvent);
+    return () => {
+      window.removeEventListener("keydown", backEvent);
+    };
+  }, [back]);
 
   return (
     <div className="relative flex h-full w-full flex-col items-center gap-4 pb-8 pt-20">
-      <Process step={step} total={QUESTION.length} />
+      <Process step={step} total={QUESTION.length} back={back} />
       <div className="h-full w-full px-12">
         <Step question={QUESTION[step]} next={handleNext} />
       </div>

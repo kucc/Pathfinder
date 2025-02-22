@@ -1,11 +1,14 @@
+import cc from "classcat";
 import Image from "next/image";
 
 export default function Process({
   step,
   total,
+  back,
 }: {
   step: number;
   total: number;
+  back: () => void;
 }) {
   return (
     <div className="flex w-full flex-col items-center gap-4 px-4">
@@ -21,8 +24,20 @@ export default function Process({
           </div>
         </div>
       </div>
-      <div className="shrink-0 whitespace-nowrap text-xl font-bold text-primary">
-        {step + 1} / {total}
+
+      <div className="grid w-full grid-cols-[1fr_60px_1fr] items-center justify-center gap-4">
+        <button
+          className={cc([
+            "btn btn-ghost justify-self-start",
+            step === 0 && "invisible",
+          ])}
+          onClick={back}
+        >
+          <img src="/back.svg" alt="Back" className="size-4" />
+        </button>
+        <div className="shrink-0 whitespace-nowrap text-xl font-bold text-primary">
+          {step + 1} / {total}
+        </div>
       </div>
     </div>
   );
