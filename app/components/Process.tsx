@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Process({
   step,
   total,
@@ -14,10 +16,9 @@ export default function Process({
             width: `${(step / total) * 100}%`,
           }}
         >
-          <img
-            src="/mascot.png"
-            className="size-6 translate-x-1/2 object-contain"
-          />
+          <div className="relative size-6 translate-x-1/2">
+            <Image src="/mascot.png" alt="Progress mascot" fill />
+          </div>
         </div>
       </div>
       <div className="shrink-0 whitespace-nowrap text-xl font-bold text-primary">
