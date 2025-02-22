@@ -59,7 +59,7 @@ export default function Test() {
   };
 
   return (
-    <div className="relative flex h-full w-full flex-col items-center gap-4 pb-8 pt-16">
+    <div className="relative flex h-full w-full flex-col items-center gap-4 pb-8 pt-20">
       <Process step={step} total={QUESTION.length} />
       <div className="h-full w-full px-12">
         <Step question={QUESTION[step]} next={handleNext} />
