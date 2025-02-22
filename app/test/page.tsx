@@ -5,7 +5,7 @@ import { useState } from "react";
 import Loading from "../components/Loading";
 import Process from "../components/Process";
 import Step from "../components/Step";
-import { QUESTION } from "../constant";
+import { QUESTION, RESULT } from "../constant";
 import { Behavior, Result } from "../types";
 
 export default function Test() {
@@ -52,7 +52,7 @@ export default function Test() {
     setLoading(true);
     const goToResult = () => {
       const type = calculateResult(result);
-      router.push(`/result/${type}`);
+      router.push(`/result/${RESULT[type]}`);
     };
 
     setTimeout(goToResult, 3000);
