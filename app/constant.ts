@@ -57,7 +57,7 @@ export const QUESTION: Question[] = [
     ],
   },
   {
-    question: "프로젝트 회의 중! 내 의견을 어떻게 말할까?",
+    question: "팀플 회의 중! 내 의견을 어떻게 말할까?",
     options: [
       {
         text: "신나게 내 의견을 펼쳐서 분위기를 이끈다! 🔥",
@@ -117,39 +117,6 @@ export const QUESTION: Question[] = [
         text: "일단 시작이 어려워... 벼락치기가 내 스타일! ⚡",
         behavior: {
           mbti: ["P"],
-          value: 3,
-        },
-      },
-    ],
-  },
-  {
-    question: "여행 중! 계획이 틀어지면 나는 어떨까? 🗺️😲",
-    options: [
-      {
-        text: "예정대로 안 되면 너무 불안해! 계획이 최고야! 📅",
-        behavior: {
-          mbti: ["S", "J"],
-          value: 3,
-        },
-      },
-      {
-        text: "조금 신경 쓰이지만, 어느 정도는 괜찮아! ✨",
-        behavior: {
-          mbti: ["S", "J"],
-          value: 1,
-        },
-      },
-      {
-        text: "즉흥적인 변화도 재밌지! 유연하게 즐긴다~ 🎶",
-        behavior: {
-          mbti: ["N", "P"],
-          value: 1,
-        },
-      },
-      {
-        text: "애초에 계획이 없어! 🏝️",
-        behavior: {
-          mbti: ["N", "P"],
           value: 3,
         },
       },
@@ -222,31 +189,65 @@ export const QUESTION: Question[] = [
     ],
   },
   {
+    question:
+      "드디어 종강이다! 신나는 마음으로 여행 중 계획이 틀어지면 나는 어떨까? 🗺️😲",
+    options: [
+      {
+        text: "불안해하며 다음 계획을 세운다 😱",
+        behavior: {
+          mbti: ["S", "J"],
+          value: 3,
+        },
+      },
+      {
+        text: "조금 짜증나지만 어쩔 수 없지.. ✨",
+        behavior: {
+          mbti: ["S", "J"],
+          value: 1,
+        },
+      },
+      {
+        text: "즉흥적인 변화도 나쁘지 않을지도~ 🎶",
+        behavior: {
+          mbti: ["N", "P"],
+          value: 1,
+        },
+      },
+      {
+        text: "애초에 계획이 없어서 질문이 이해가 안 간다. 🏝️",
+        behavior: {
+          mbti: ["N", "P"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
     question: "문득 떠오르는 생각들! 나는 어떤 생각을 하는 편일까?",
     options: [
       {
-        text: "혼자 상상의 나래를 펼친다! 🔍✨",
+        text: "혼자 상상의 나래를 펼친다! 😎",
         behavior: {
           mbti: ["I", "N"],
           value: 3,
         },
       },
       {
-        text: "가끔은 머릿속에서 생각을 정리한다. 😊",
+        text: "가끔은 머릿속에서 생각을 정리한다 📝",
         behavior: {
           mbti: ["I", "N"],
           value: 1,
         },
       },
       {
-        text: "깊게 생각하는 것보다는 직접 보고 듣는 게 더 좋아! 🎶",
+        text: "깊게 생각하는 것을 즐기지 않는다 🥱",
         behavior: {
           mbti: ["E", "S"],
           value: 1,
         },
       },
       {
-        text: "친구들과의 대화주제로 써야지 🗣️",
+        text: "오! 친구들이랑 대화 주제로 좋겠는걸? 🗣️",
         behavior: {
           mbti: ["E", "S"],
           value: 3,
@@ -355,12 +356,11 @@ export const QUESTION: Question[] = [
       },
     ],
   },
-  // 스스로 예술가적 기질이 강하다고 생각합니다 (긍정 N F, 부정 S T)
   {
     question: "교양 수업에서 창작 과제가 나왔다! 나는...?",
     options: [
       {
-        text: "벌써 아이디어가 넘침 🎭",
+        text: "벌써 아이디어가 넘친다! 가보자고 🎭",
         behavior: {
           mbti: ["N", "F"],
           value: 3,
@@ -374,7 +374,7 @@ export const QUESTION: Question[] = [
         },
       },
       {
-        text: "최선만 다한다.. 💪",
+        text: "최선을 다한다.. 최선만 다한다.. 💪",
         behavior: {
           mbti: ["S", "T"],
           value: 1,
