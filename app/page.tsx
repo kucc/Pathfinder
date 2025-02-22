@@ -1,3 +1,4 @@
+import Link from "next/link";
 import MainImage from "./components/MainImage";
 
 export default function Home() {
@@ -13,7 +14,9 @@ export default function Home() {
         </h1>
         <MainImage />
       </div>
-      <button className="btn btn-primary w-full">시작하기</button>
+      <Link href="/test" className="btn btn-primary w-full">
+        시작하기
+      </Link>
     </div>
   );
 }
