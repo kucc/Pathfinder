@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 나에게 맞는 IT 직군은?
 
-## Getting Started
+> 2025 동아리박람회 홍보용 프로젝트
 
-First, run the development server:
+## 프로젝트 소개
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+MBTI를 기반으로 질문에 선택지를 제시하고, 그에 따라 IT 직군을 추천하는 (겸사겸사 KUCC 홍보용..) 프로젝트입니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 기여자
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 기획: 김현채, 임창현
+- 아트: 정유나
+- 개발: 김현채
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 기타
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 프로젝트를 수정하거나 디벨롭하고 싶으시면 그냥 하시면 됩니다.
+- 문의는 김현채에게 연락 주세요.
