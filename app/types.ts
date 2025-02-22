@@ -3,6 +3,7 @@ export type MBTIType = "EI" | "SN" | "TF" | "JP";
 
 export interface Question {
   question: string;
+  message?: string;
   options: {
     text: string;
     behavior: Behavior;
