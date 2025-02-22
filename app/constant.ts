@@ -24,31 +24,31 @@ export const RESULT: {
 export const QUESTION: Question[] = [
   {
     question:
-      "입학 후 첫 강의를 기다리는 시간, 처음 보는 강의실 옆자리 사람에게 말을 거는 편입니다.",
+      "입학 후 첫 강의를 기다리는 중! 처음 보는 강의실 옆자리 사람에게 나는?",
     options: [
       {
-        text: "매우 그렇다",
+        text: "바로 말 걸고 친해진다! 🥳",
         behavior: {
           mbti: ["E"],
           value: 3,
         },
       },
       {
-        text: "그렇다",
+        text: "살짝 고민하다가 조심스럽게 인사한다. 👋",
         behavior: {
           mbti: ["E"],
           value: 1,
         },
       },
       {
-        text: "그렇지 않다",
+        text: "괜히 머뭇거리다가 못 말하고 지나간다. 🤭",
         behavior: {
           mbti: ["I"],
           value: 1,
         },
       },
       {
-        text: "매우 그렇지 않다",
+        text: "그냥 조용히 내 세계에 집중한다! 🤐",
         behavior: {
           mbti: ["I"],
           value: 3,
@@ -57,64 +57,64 @@ export const QUESTION: Question[] = [
     ],
   },
   {
-    question: "프로젝트를 진행할 때, 활발하게 의견을 주장하는 편입니다.",
+    question: "프로젝트 회의 중! 내 의견을 어떻게 말할까?",
     options: [
       {
-        text: "매우 그렇다",
+        text: "신나게 내 의견을 펼쳐서 분위기를 이끈다! 🔥",
         behavior: {
-          mbti: ["E"],
+          mbti: ["E", "T"],
           value: 3,
         },
       },
       {
-        text: "그렇다",
+        text: "적극적으로 참여하지만, 살짝 조심스럽다. 🙄",
         behavior: {
-          mbti: ["E"],
+          mbti: ["E", "F"],
           value: 1,
         },
       },
       {
-        text: "그렇지 않다",
+        text: "필요할 때만 조용히 의견을 내는 편! 🙊",
         behavior: {
-          mbti: ["I"],
+          mbti: ["I", "T"],
           value: 1,
         },
       },
       {
-        text: "매우 그렇지 않다",
+        text: "다른 의견을 경청하는 것을 중요하게 생각한다. 🎧",
         behavior: {
-          mbti: ["I"],
+          mbti: ["I", "F"],
           value: 3,
         },
       },
     ],
   },
   {
-    question: "시험 공부 계획을 구체적으로 세우며 잘 지키는 편입니다.",
+    question: "벚꽃의 꽃말은 중간고사... 시험 공부는 어떻게 할까?",
     options: [
       {
-        text: "매우 그렇다",
+        text: "완벽한 플랜을 세우고 착착 지킨다! 📅",
         behavior: {
           mbti: ["J"],
           value: 3,
         },
       },
       {
-        text: "그렇다",
+        text: "대충 계획은 세우지만 융통성 있게 조절! 😉",
         behavior: {
           mbti: ["J"],
           value: 1,
         },
       },
       {
-        text: "그렇지 않다",
+        text: "그때그때 흐름대로~ 🎵",
         behavior: {
           mbti: ["P"],
           value: 1,
         },
       },
       {
-        text: "매우 그렇지 않다",
+        text: "일단 시작이 어려워... 벼락치기가 내 스타일! ⚡",
         behavior: {
           mbti: ["P"],
           value: 3,
@@ -123,165 +123,165 @@ export const QUESTION: Question[] = [
     ],
   },
   {
-    question:
-      "여행을 가려고 할 때, 계획대로 여행이 흘러가지 않으면 불안한 편입니다.",
+    question: "여행 중! 계획이 틀어지면 나는 어떨까? 🗺️😲",
     options: [
       {
-        text: "매우 그렇다",
+        text: "예정대로 안 되면 너무 불안해! 계획이 최고야! 📅",
         behavior: {
-          mbti: ["S"],
+          mbti: ["S", "J"],
           value: 3,
         },
       },
       {
-        text: "그렇다",
+        text: "조금 신경 쓰이지만, 어느 정도는 괜찮아! ✨",
         behavior: {
-          mbti: ["S"],
+          mbti: ["S", "J"],
           value: 1,
         },
       },
       {
-        text: "그렇지 않다",
+        text: "즉흥적인 변화도 재밌지! 유연하게 즐긴다~ 🎶",
         behavior: {
-          mbti: ["N"],
+          mbti: ["N", "P"],
           value: 1,
         },
       },
       {
-        text: "매우 그렇지 않다",
+        text: "애초에 계획이 없어! 🏝️",
         behavior: {
-          mbti: ["N"],
+          mbti: ["N", "P"],
           value: 3,
         },
       },
     ],
   },
   {
-    question: "자의적 혹은 타의적으로 리더 역할을 맡는 편입니다.",
+    question: "교수님이 조별과제를 내주셨다. 조장을 정하라고 하시는데...",
     options: [
       {
-        text: "매우 그렇다",
+        text: "내가 이끌어야 직성이 풀린다. 💪",
+        behavior: {
+          mbti: ["T", "J"],
+          value: 3,
+        },
+      },
+      {
+        text: "누군가 해야 한다면... 내가 해도 괜찮아 😁",
+        behavior: {
+          mbti: ["T", "J"],
+          value: 1,
+        },
+      },
+      {
+        text: "굳이? 저는 서포트 잘 할게요.. 🤗",
+        behavior: {
+          mbti: ["F", "P"],
+          value: 1,
+        },
+      },
+      {
+        text: "절대 싫다. 🤷‍♂️",
+        behavior: {
+          mbti: ["F", "P"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question: "친구들이 영화를 보러 가자고 하네. 어떤 장르가 더 끌릴까?",
+    options: [
+      {
+        text: "마법, 모험, 초능력! 상상 속 세계가 너무 좋아! 🏰",
+        behavior: {
+          mbti: ["N"],
+          value: 3,
+        },
+      },
+      {
+        text: "색다른 설정도 좋지만, 갑분외계인은 좀... 👽️",
+        behavior: {
+          mbti: ["N"],
+          value: 1,
+        },
+      },
+      {
+        text: "내가 공감할 수 있는 이야기가 좋아 🎭",
+        behavior: {
+          mbti: ["S"],
+          value: 1,
+        },
+      },
+      {
+        text: "리얼리티와 개연성이 중요해 📚",
+        behavior: {
+          mbti: ["S"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question: "문득 떠오르는 생각들! 나는 어떤 생각을 하는 편일까?",
+    options: [
+      {
+        text: "혼자 상상의 나래를 펼친다! 🔍✨",
+        behavior: {
+          mbti: ["I", "N"],
+          value: 3,
+        },
+      },
+      {
+        text: "가끔은 머릿속에서 생각을 정리한다. 😊",
+        behavior: {
+          mbti: ["I", "N"],
+          value: 1,
+        },
+      },
+      {
+        text: "깊게 생각하는 것보다는 직접 보고 듣는 게 더 좋아! 🎶",
+        behavior: {
+          mbti: ["E", "S"],
+          value: 1,
+        },
+      },
+      {
+        text: "친구들과의 대화주제로 써야지 🗣️",
+        behavior: {
+          mbti: ["E", "S"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  // *친구의 고민을 들을 때 어떤 공감을 해줄까 보다는 어떤 해결책이 있을까하는 생각이 먼저 드는 편입니다 (긍정 T, 부정 F)
+  {
+    question: "친구가 갑자기 고민 상담을 요청했다!",
+    message: "나 헤어졌다... 지금 춘자로 와줄래?",
+    options: [
+      {
+        text: "왜 헤어졌어? 이유부터 들어보고 🤔",
         behavior: {
           mbti: ["T"],
           value: 3,
         },
       },
       {
-        text: "그렇다",
+        text: "슬프겠지만 이미 헤어진 걸 어떡해 😥",
         behavior: {
           mbti: ["T"],
           value: 1,
         },
       },
       {
-        text: "그렇지 않다",
+        text: "일단 아무 말 없이 들어준다 🤫",
         behavior: {
           mbti: ["F"],
           value: 1,
         },
       },
       {
-        text: "매우 그렇지 않다",
-        behavior: {
-          mbti: ["F"],
-          value: 3,
-        },
-      },
-    ],
-  },
-  {
-    question: "소설이나 영화 등을 볼 때 판타지 장르를 선호하는 편입니다.",
-    options: [
-      {
-        text: "매우 그렇다",
-        behavior: {
-          mbti: ["N"],
-          value: 3,
-        },
-      },
-      {
-        text: "그렇다",
-        behavior: {
-          mbti: ["N"],
-          value: 1,
-        },
-      },
-      {
-        text: "그렇지 않다",
-        behavior: {
-          mbti: ["S"],
-          value: 1,
-        },
-      },
-      {
-        text: "매우 그렇지 않다",
-        behavior: {
-          mbti: ["S"],
-          value: 3,
-        },
-      },
-    ],
-  },
-  {
-    question: "혼자만의 이론을 세우고 생각해 보는 것을 좋아합니다.",
-    options: [
-      {
-        text: "매우 그렇다",
-        behavior: {
-          mbti: ["I"],
-          value: 3,
-        },
-      },
-      {
-        text: "그렇다",
-        behavior: {
-          mbti: ["I"],
-          value: 1,
-        },
-      },
-      {
-        text: "그렇지 않다",
-        behavior: {
-          mbti: ["E"],
-          value: 1,
-        },
-      },
-      {
-        text: "매우 그렇지 않다",
-        behavior: {
-          mbti: ["E"],
-          value: 3,
-        },
-      },
-    ],
-  },
-  {
-    question:
-      "친구의 고민을 들을 때 어떤 공감을 해줄까 보다는 어떤 해결책이 있을까하는 생각이 먼저 드는 편입니다.",
-    options: [
-      {
-        text: "매우 그렇다",
-        behavior: {
-          mbti: ["T"],
-          value: 3,
-        },
-      },
-      {
-        text: "그렇다",
-        behavior: {
-          mbti: ["T"],
-          value: 1,
-        },
-      },
-      {
-        text: "그렇지 않다",
-        behavior: {
-          mbti: ["F"],
-          value: 1,
-        },
-      },
-      {
-        text: "매우 그렇지 않다",
+        text: "말보단 따뜻한 라면 한 입! 🍜",
         behavior: {
           mbti: ["F"],
           value: 3,
@@ -290,134 +290,134 @@ export const QUESTION: Question[] = [
     ],
   },
   {
-    question: "학창시절 다른과목보다 수학, 과학 과목을 특히 좋아하곤 했습니다.",
+    question: "학창 시절, 내가 좋아했던 과목은...",
     options: [
       {
-        text: "매우 그렇다",
+        text: "수학이나 물리가 좋았어 🧮",
         behavior: {
-          mbti: ["N"],
+          mbti: ["N", "T"],
           value: 3,
         },
       },
       {
-        text: "그렇다",
+        text: "두루두루 공부하는 게 좋았어! 📚",
         behavior: {
-          mbti: ["N"],
+          mbti: ["N", "T"],
           value: 1,
         },
       },
       {
-        text: "그렇지 않다",
+        text: "국어, 사회 같은 스토리 있는 과목이 좋았지! 📖",
         behavior: {
-          mbti: ["S"],
+          mbti: ["S", "F"],
           value: 1,
         },
       },
       {
-        text: "매우 그렇지 않다",
+        text: "나는 예체능파.. 🎨",
         behavior: {
-          mbti: ["S"],
+          mbti: ["S", "F"],
           value: 3,
         },
       },
     ],
   },
   {
-    question:
-      "실행력이 빠른 편이라 계획을 세우고 바로 이행합니다. 그리고 한 번 시작한 일은 제대로 마무리를 보는 편입니다.",
+    question: "동아리 행사가 잡혔다!",
     options: [
       {
-        text: "매우 그렇다",
+        text: "바로 역할 나누고 일정 짜서 착착 진행! ✅",
         behavior: {
-          mbti: ["E"],
+          mbti: ["E", "J"],
           value: 3,
         },
       },
       {
-        text: "그렇다",
+        text: "팀원들 의견을 조율하면서 조금씩 진행! 🤔",
         behavior: {
-          mbti: ["E"],
+          mbti: ["E", "J"],
           value: 1,
         },
       },
       {
-        text: "그렇지 않다",
+        text: "일단 분위기 보고 맞춰가자.. 👀",
         behavior: {
-          mbti: ["I"],
+          mbti: ["I", "P"],
           value: 1,
         },
       },
       {
-        text: "매우 그렇지 않다",
+        text: "급하게 할 필요 있나? 좀 쉬고 하자.. 💤",
         behavior: {
-          mbti: ["I"],
+          mbti: ["I", "P"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  // 스스로 예술가적 기질이 강하다고 생각합니다 (긍정 N F, 부정 S T)
+  {
+    question: "교양 수업에서 창작 과제가 나왔다! 나는...?",
+    options: [
+      {
+        text: "벌써 아이디어가 넘침 🎭",
+        behavior: {
+          mbti: ["N", "F"],
+          value: 3,
+        },
+      },
+      {
+        text: "그래도 해볼 만하다 🤔",
+        behavior: {
+          mbti: ["N", "F"],
+          value: 1,
+        },
+      },
+      {
+        text: "최선만 다한다.. 💪",
+        behavior: {
+          mbti: ["S", "T"],
+          value: 1,
+        },
+      },
+      {
+        text: "차라리 레포트를 주세요 교수님 📑",
+        behavior: {
+          mbti: ["S", "T"],
           value: 3,
         },
       },
     ],
   },
   {
-    question: "스스로 예술가적 기질이 강하다고 생각합니다.",
+    question: "토론 수업 중 학우가 내 의견에 반박했다!",
+    message: "근데 그거 좀 다른 해석도 가능하지 않아?",
     options: [
       {
-        text: "매우 그렇다",
+        text: "근거 없으면 절대 못 받아들여! 🔥",
         behavior: {
-          mbti: ["N"],
+          mbti: ["I", "J"],
           value: 3,
         },
       },
       {
-        text: "그렇다",
+        text: "그렇다면 날 설득해봐 🔍",
         behavior: {
-          mbti: ["N"],
+          mbti: ["I", "J"],
           value: 1,
         },
       },
       {
-        text: "그렇지 않다",
+        text: "어? 그런가? 한 번 들어본다 😇",
         behavior: {
-          mbti: ["S"],
+          mbti: ["E", "P"],
           value: 1,
         },
       },
       {
-        text: "매우 그렇지 않다",
+        text: "좋은 의견이네! 적극 반영 💬",
         behavior: {
-          mbti: ["S"],
-          value: 3,
-        },
-      },
-    ],
-  },
-  {
-    question:
-      "남이 나를 지적해도 내가 틀렸다는 확실한 증거를 제시하지 않는 한 생각을 잘 바꾸지 않습니다.",
-    options: [
-      {
-        text: "매우 그렇다",
-        behavior: {
-          mbti: ["I"],
-          value: 3,
-        },
-      },
-      {
-        text: "그렇다",
-        behavior: {
-          mbti: ["I"],
-          value: 1,
-        },
-      },
-      {
-        text: "그렇지 않다",
-        behavior: {
-          mbti: ["E"],
-          value: 1,
-        },
-      },
-      {
-        text: "매우 그렇지 않다",
-        behavior: {
-          mbti: ["E"],
+          mbti: ["E", "P"],
           value: 3,
         },
       },
