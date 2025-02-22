@@ -1,7 +1,6 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { CAREER } from "../constant";
 
@@ -39,11 +38,10 @@ export default function MainImage({ speed = 1 }: { speed?: number }) {
           }}
           className="absolute h-full w-full rounded-lg"
         >
-          <Image
+          <img
             src={items[selectedIndex]}
             alt="IT 직군 이미지"
             className="h-full w-full object-contain"
-            fill
           />
         </motion.div>
       </AnimatePresence>
