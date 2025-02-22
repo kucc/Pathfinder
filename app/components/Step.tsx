@@ -16,7 +16,7 @@ export default function Step({
         </p>
         {question.message && (
           <div className="chat chat-start">
-            <div className="chat-bubble chat-bubble-primary max-w-none">
+            <div className="chat-bubble chat-bubble-primary max-w-none font-semibold">
               {question.message}
             </div>
           </div>
