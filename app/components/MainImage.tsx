@@ -5,14 +5,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { RESULT } from "../constant";
 
-export default function MainImage() {
+export default function MainImage({ speed = 1 }: { speed?: number }) {
   const items = unique(Object.values(RESULT).map((result) => result.image));
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setSelectedIndex((prev) => (prev + 1) % items.length);
-    }, 1500);
+    }, 1500 / speed);
 
     return () => clearInterval(interval);
   }, [items.length]);

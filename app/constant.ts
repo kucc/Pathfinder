@@ -1,3 +1,5 @@
+import { Question } from "./types";
+
 export const RESULT: {
   [key: string]: {
     image: string;
@@ -90,3 +92,407 @@ export const RESULT: {
     activity: { title: "쿠씨톤", type: "event" },
   },
 };
+
+export const QUESTION: Question[] = [
+  {
+    question:
+      "입학 후 첫 강의를 기다리는 시간, 처음 보는 강의실 옆자리 사람에게 말을 거는 편입니다.",
+    options: [
+      {
+        text: "매우 그렇다",
+        behavior: {
+          mbti: ["E"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다",
+        behavior: {
+          mbti: ["E"],
+          value: 1,
+        },
+      },
+      {
+        text: "그렇지 않다",
+        behavior: {
+          mbti: ["I"],
+          value: 1,
+        },
+      },
+      {
+        text: "매우 그렇지 않다",
+        behavior: {
+          mbti: ["I"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question: "프로젝트를 진행할 때, 활발하게 의견을 주장하는 편입니다.",
+    options: [
+      {
+        text: "매우 그렇다",
+        behavior: {
+          mbti: ["E"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다",
+        behavior: {
+          mbti: ["E"],
+          value: 1,
+        },
+      },
+      {
+        text: "그렇지 않다",
+        behavior: {
+          mbti: ["I"],
+          value: 1,
+        },
+      },
+      {
+        text: "매우 그렇지 않다",
+        behavior: {
+          mbti: ["I"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question: "시험 공부 계획을 구체적으로 세우며 잘 지키는 편입니다.",
+    options: [
+      {
+        text: "매우 그렇다",
+        behavior: {
+          mbti: ["J"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다",
+        behavior: {
+          mbti: ["J"],
+          value: 1,
+        },
+      },
+      {
+        text: "그렇지 않다",
+        behavior: {
+          mbti: ["P"],
+          value: 1,
+        },
+      },
+      {
+        text: "매우 그렇지 않다",
+        behavior: {
+          mbti: ["P"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question:
+      "여행을 가려고 할 때, 계획대로 여행이 흘러가지 않으면 불안한 편입니다.",
+    options: [
+      {
+        text: "매우 그렇다",
+        behavior: {
+          mbti: ["S"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다",
+        behavior: {
+          mbti: ["S"],
+          value: 1,
+        },
+      },
+      {
+        text: "그렇지 않다",
+        behavior: {
+          mbti: ["N"],
+          value: 1,
+        },
+      },
+      {
+        text: "매우 그렇지 않다",
+        behavior: {
+          mbti: ["N"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question: "자의적 혹은 타의적으로 리더 역할을 맡는 편입니다.",
+    options: [
+      {
+        text: "매우 그렇다",
+        behavior: {
+          mbti: ["T"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다",
+        behavior: {
+          mbti: ["T"],
+          value: 1,
+        },
+      },
+      {
+        text: "그렇지 않다",
+        behavior: {
+          mbti: ["F"],
+          value: 1,
+        },
+      },
+      {
+        text: "매우 그렇지 않다",
+        behavior: {
+          mbti: ["F"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question: "소설이나 영화 등을 볼 때 판타지 장르를 선호하는 편입니다.",
+    options: [
+      {
+        text: "매우 그렇다",
+        behavior: {
+          mbti: ["N"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다",
+        behavior: {
+          mbti: ["N"],
+          value: 1,
+        },
+      },
+      {
+        text: "그렇지 않다",
+        behavior: {
+          mbti: ["S"],
+          value: 1,
+        },
+      },
+      {
+        text: "매우 그렇지 않다",
+        behavior: {
+          mbti: ["S"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question: "혼자만의 이론을 세우고 생각해 보는 것을 좋아합니다.",
+    options: [
+      {
+        text: "매우 그렇다",
+        behavior: {
+          mbti: ["I"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다",
+        behavior: {
+          mbti: ["I"],
+          value: 1,
+        },
+      },
+      {
+        text: "그렇지 않다",
+        behavior: {
+          mbti: ["E"],
+          value: 1,
+        },
+      },
+      {
+        text: "매우 그렇지 않다",
+        behavior: {
+          mbti: ["E"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question:
+      "친구의 고민을 들을 때 어떤 공감을 해줄까 보다는 어떤 해결책이 있을까하는 생각이 먼저 드는 편입니다.",
+    options: [
+      {
+        text: "매우 그렇다",
+        behavior: {
+          mbti: ["T"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다",
+        behavior: {
+          mbti: ["T"],
+          value: 1,
+        },
+      },
+      {
+        text: "그렇지 않다",
+        behavior: {
+          mbti: ["F"],
+          value: 1,
+        },
+      },
+      {
+        text: "매우 그렇지 않다",
+        behavior: {
+          mbti: ["F"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question: "학창시절 다른과목보다 수학, 과학 과목을 특히 좋아하곤 했습니다.",
+    options: [
+      {
+        text: "매우 그렇다",
+        behavior: {
+          mbti: ["N"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다",
+        behavior: {
+          mbti: ["N"],
+          value: 1,
+        },
+      },
+      {
+        text: "그렇지 않다",
+        behavior: {
+          mbti: ["S"],
+          value: 1,
+        },
+      },
+      {
+        text: "매우 그렇지 않다",
+        behavior: {
+          mbti: ["S"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question:
+      "실행력이 빠른 편이라 계획을 세우고 바로 이행합니다. 그리고 한 번 시작한 일은 제대로 마무리를 보는 편입니다.",
+    options: [
+      {
+        text: "매우 그렇다",
+        behavior: {
+          mbti: ["E"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다",
+        behavior: {
+          mbti: ["E"],
+          value: 1,
+        },
+      },
+      {
+        text: "그렇지 않다",
+        behavior: {
+          mbti: ["I"],
+          value: 1,
+        },
+      },
+      {
+        text: "매우 그렇지 않다",
+        behavior: {
+          mbti: ["I"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question: "스스로 예술가적 기질이 강하다고 생각합니다.",
+    options: [
+      {
+        text: "매우 그렇다",
+        behavior: {
+          mbti: ["N"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다",
+        behavior: {
+          mbti: ["N"],
+          value: 1,
+        },
+      },
+      {
+        text: "그렇지 않다",
+        behavior: {
+          mbti: ["S"],
+          value: 1,
+        },
+      },
+      {
+        text: "매우 그렇지 않다",
+        behavior: {
+          mbti: ["S"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question:
+      "남이 나를 지적해도 내가 틀렸다는 확실한 증거를 제시하지 않는 한 생각을 잘 바꾸지 않습니다.",
+    options: [
+      {
+        text: "매우 그렇다",
+        behavior: {
+          mbti: ["I"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다",
+        behavior: {
+          mbti: ["I"],
+          value: 1,
+        },
+      },
+      {
+        text: "그렇지 않다",
+        behavior: {
+          mbti: ["E"],
+          value: 1,
+        },
+      },
+      {
+        text: "매우 그렇지 않다",
+        behavior: {
+          mbti: ["E"],
+          value: 3,
+        },
+      },
+    ],
+  },
+];
