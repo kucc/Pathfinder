@@ -18,9 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex h-screen w-full flex-col items-center justify-center bg-base-200">
+      <body className="flex h-dvh w-full flex-col items-center justify-center bg-base-200">
         <Header />
-        <div className="flex h-screen w-full max-w-md flex-col justify-between bg-white shadow-md">
+        <div className="flex h-dvh w-full max-w-md flex-col justify-between bg-white shadow-md">
           <main className="h-full shrink overflow-y-auto">{children}</main>
           <Footer />
         </div>
