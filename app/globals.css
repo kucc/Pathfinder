@@ -21,3 +21,8 @@ body {
 .font-cute {
   @apply font-["HakgyoansimDunggeunmisoTTF-B"];
 }
+
+.chat-bubble-primary {
+  background-color: var(--fallback-b2, oklch(var(--b2) / var(--tw-bg-opacity)));
+  color: var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)));
+}
