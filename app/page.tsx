@@ -1,7 +1,12 @@
-import Link from "next/link";
-import MainImage from "./components/MainImage";
+"use client";
 
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import MainImage from "./components/MainImage";
 export default function Home() {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const router = useRouter();
+
   return (
     <div className="flex h-full w-full flex-col items-center justify-between gap-4 px-12 pb-8 pt-32">
       <div className="flex h-full w-full flex-col items-center gap-8 overflow-hidden">
@@ -12,11 +17,15 @@ export default function Home() {
             은?
           </div>
         </h1>
-        <MainImage />
+        <MainImage isLoaded={isLoaded} setIsLoaded={setIsLoaded} />
       </div>
-      <Link href="/test" className="btn btn-primary w-full">
+      <button
+        className="btn btn-primary w-full"
+        disabled={!isLoaded}
+        onClick={() => router.push("/test")}
+      >
         시작하기
-      </Link>
+      </button>
     </div>
   );
 }

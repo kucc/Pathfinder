@@ -4,17 +4,54 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { CAREER } from "../constant";
 
-export default function MainImage({ speed = 1 }: { speed?: number }) {
+export default function MainImage({
+  speed = 1,
+  isLoaded,
+  setIsLoaded,
+}: {
+  speed?: number;
+  isLoaded: boolean;
+  setIsLoaded: (isLoaded: boolean) => void;
+}) {
   const items = Object.values(CAREER).map((career) => career.image);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
+    const preloadImages = async () => {
+      await Promise.all(
+        items.map(
+          (src) =>
+            new Promise<void>((resolve) => {
+              const img = new Image();
+              img.src = src;
+              img.onload = () => resolve();
+            }),
+        ),
+      );
+      setIsLoaded(true);
+    };
+
+    preloadImages();
+  }, [items]);
+
+  useEffect(() => {
+    if (!isLoaded) return;
+
     const interval = setInterval(() => {
       setSelectedIndex((prev) => (prev + 1) % items.length);
     }, 1500 / speed);
 
     return () => clearInterval(interval);
-  }, [items.length]);
+  }, [isLoaded, items.length, speed]);
+
+  if (!isLoaded) {
+    return (
+      <div className="flex h-full w-full flex-col items-center justify-center">
+        <div className="text-lg font-semibold">잠시만 기다려주세요</div>
+        <div className="loading loading-dots text-primary" />
+      </div>
+    );
+  }
 
   return (
     <div className="relative flex h-full w-full flex-1 items-center justify-center gap-4 overflow-visible">
