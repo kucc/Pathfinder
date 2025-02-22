@@ -81,7 +81,7 @@ export const QUESTION: Question[] = [
         },
       },
       {
-        text: "다른 의견을 경청하는 것을 중요하게 생각한다. 🎧",
+        text: "다른 의견을 경청하는 게 중요하다고 생각한다 🎧",
         behavior: {
           mbti: ["I", "F"],
           value: 3,
@@ -100,7 +100,7 @@ export const QUESTION: Question[] = [
         },
       },
       {
-        text: "대충 계획은 세우지만 융통성 있게 조절! 😉",
+        text: "계획은 세우지만 융통성 있게 조절한다 😉",
         behavior: {
           mbti: ["J"],
           value: 1,
@@ -117,6 +117,40 @@ export const QUESTION: Question[] = [
         text: "일단 시작이 어려워... 벼락치기가 내 스타일! ⚡",
         behavior: {
           mbti: ["P"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question:
+      "시험 공부를 하던 중, 집중하려고 애쓰는데 갑자기 머릿속에 재미있는 생각이 스쳐 지나간다! 이럴 때 나는 어떻게 할까?",
+    options: [
+      {
+        text: "혼자 상상의 나래를 펼친다! 😎",
+        behavior: {
+          mbti: ["I", "N"],
+          value: 3,
+        },
+      },
+      {
+        text: "가끔은 머릿속에서 생각을 정리하는 것도 좋지 📝",
+        behavior: {
+          mbti: ["I", "N"],
+          value: 1,
+        },
+      },
+      {
+        text: "그럴 시간에 공부나 빨리 끝내고 논다 🍕",
+        behavior: {
+          mbti: ["E", "S"],
+          value: 1,
+        },
+      },
+      {
+        text: "오! 친구들이랑 대화 주제로 좋겠는걸? 🗣️",
+        behavior: {
+          mbti: ["E", "S"],
           value: 3,
         },
       },
@@ -156,7 +190,7 @@ export const QUESTION: Question[] = [
     ],
   },
   {
-    question: "친구들이 영화를 보러 가자고 하네. 어떤 장르가 더 끌릴까?",
+    question: "친구들이 영화를 보러 가자고 하네. 내가 좋아하는 영화 스타일은?",
     options: [
       {
         text: "마법, 모험, 초능력! 상상 속 세계가 너무 좋아! 🏰",
@@ -190,7 +224,76 @@ export const QUESTION: Question[] = [
   },
   {
     question:
-      "드디어 종강이다! 신나는 마음으로 여행 중 계획이 틀어지면 나는 어떨까? 🗺️😲",
+      "교양 수업 시간, 교수님이 창작 과제를 내주셨다. 자유롭게 표현해 보라고 하시는데...",
+    options: [
+      {
+        text: "벌써 아이디어가 넘친다! 가보자고 🎭",
+        behavior: {
+          mbti: ["N", "F"],
+          value: 3,
+        },
+      },
+      {
+        text: "그래도 해볼 만하다 🤔",
+        behavior: {
+          mbti: ["N", "F"],
+          value: 1,
+        },
+      },
+      {
+        text: "최선을 다한다.. 최선만 다한다.. 💪",
+        behavior: {
+          mbti: ["S", "T"],
+          value: 1,
+        },
+      },
+      {
+        text: "차라리 레포트를 주세요 교수님 📑",
+        behavior: {
+          mbti: ["S", "T"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question:
+      "토론 수업 중 열띤 논의가 이어지는 가운데, 한 학우가 내 의견에 반박했다!",
+    message: "근데 그거 좀 다른 해석도 가능하지 않아?",
+    options: [
+      {
+        text: "근거 없으면 절대 못 받아들여! 🔥",
+        behavior: {
+          mbti: ["I", "J"],
+          value: 3,
+        },
+      },
+      {
+        text: "그렇다면 날 설득해봐 🔍",
+        behavior: {
+          mbti: ["I", "J"],
+          value: 1,
+        },
+      },
+      {
+        text: "어? 그런가? 한 번 들어본다 😇",
+        behavior: {
+          mbti: ["E", "P"],
+          value: 1,
+        },
+      },
+      {
+        text: "좋은 의견이네! 적극 반영 💬",
+        behavior: {
+          mbti: ["E", "P"],
+          value: 3,
+        },
+      },
+    ],
+  },
+  {
+    question:
+      "드디어 종강이다! 신나게 여행을 떠났는데... 예상치 못한 변수로 계획이 틀어져버렸다.",
     options: [
       {
         text: "불안해하며 다음 계획을 세운다 😱",
@@ -222,40 +325,6 @@ export const QUESTION: Question[] = [
       },
     ],
   },
-  {
-    question: "문득 떠오르는 생각들! 나는 어떤 생각을 하는 편일까?",
-    options: [
-      {
-        text: "혼자 상상의 나래를 펼친다! 😎",
-        behavior: {
-          mbti: ["I", "N"],
-          value: 3,
-        },
-      },
-      {
-        text: "가끔은 머릿속에서 생각을 정리한다 📝",
-        behavior: {
-          mbti: ["I", "N"],
-          value: 1,
-        },
-      },
-      {
-        text: "깊게 생각하는 것을 즐기지 않는다 🥱",
-        behavior: {
-          mbti: ["E", "S"],
-          value: 1,
-        },
-      },
-      {
-        text: "오! 친구들이랑 대화 주제로 좋겠는걸? 🗣️",
-        behavior: {
-          mbti: ["E", "S"],
-          value: 3,
-        },
-      },
-    ],
-  },
-  // *친구의 고민을 들을 때 어떤 공감을 해줄까 보다는 어떤 해결책이 있을까하는 생각이 먼저 드는 편입니다 (긍정 T, 부정 F)
   {
     question: "친구가 갑자기 고민 상담을 요청했다!",
     message: "나 헤어졌다... 지금 춘자로 와줄래?",
@@ -324,7 +393,8 @@ export const QUESTION: Question[] = [
     ],
   },
   {
-    question: "동아리 행사가 잡혔다!",
+    question:
+      "동아리에서 큰 행사가 잡혔다! 기획부터 준비해야 하는데.. 어떻게 할까?",
     options: [
       {
         text: "바로 역할 나누고 일정 짜서 착착 진행! ✅",
@@ -356,74 +426,8 @@ export const QUESTION: Question[] = [
       },
     ],
   },
-  {
-    question: "교양 수업에서 창작 과제가 나왔다! 나는...?",
-    options: [
-      {
-        text: "벌써 아이디어가 넘친다! 가보자고 🎭",
-        behavior: {
-          mbti: ["N", "F"],
-          value: 3,
-        },
-      },
-      {
-        text: "그래도 해볼 만하다 🤔",
-        behavior: {
-          mbti: ["N", "F"],
-          value: 1,
-        },
-      },
-      {
-        text: "최선을 다한다.. 최선만 다한다.. 💪",
-        behavior: {
-          mbti: ["S", "T"],
-          value: 1,
-        },
-      },
-      {
-        text: "차라리 레포트를 주세요 교수님 📑",
-        behavior: {
-          mbti: ["S", "T"],
-          value: 3,
-        },
-      },
-    ],
-  },
-  {
-    question: "토론 수업 중 학우가 내 의견에 반박했다!",
-    message: "근데 그거 좀 다른 해석도 가능하지 않아?",
-    options: [
-      {
-        text: "근거 없으면 절대 못 받아들여! 🔥",
-        behavior: {
-          mbti: ["I", "J"],
-          value: 3,
-        },
-      },
-      {
-        text: "그렇다면 날 설득해봐 🔍",
-        behavior: {
-          mbti: ["I", "J"],
-          value: 1,
-        },
-      },
-      {
-        text: "어? 그런가? 한 번 들어본다 😇",
-        behavior: {
-          mbti: ["E", "P"],
-          value: 1,
-        },
-      },
-      {
-        text: "좋은 의견이네! 적극 반영 💬",
-        behavior: {
-          mbti: ["E", "P"],
-          value: 3,
-        },
-      },
-    ],
-  },
 ];
+
 export const CAREER: {
   [key: string]: {
     image: string;
