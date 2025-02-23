@@ -28,16 +28,16 @@ export default function Share({ type }: { type: keyof typeof CAREER }) {
   }, []);
 
   return (
-    <div className="flex w-full items-center gap-2">
+    <div className="flex w-full items-center gap-2 max-[380px]:flex-wrap">
       <button
-        className="btn btn-outline btn-primary w-full shrink"
+        className="btn btn-outline btn-primary w-full shrink flex-nowrap whitespace-nowrap"
         onClick={() => downloadImage()}
       >
         <img src="/download.svg" alt="download" className="size-4" /> 결과
         이미지 다운로드
       </button>
       <button
-        className="btn btn-primary w-full shrink"
+        className="btn btn-primary w-full shrink flex-nowrap whitespace-nowrap"
         onClick={() => {
           handleShare();
         }}
