@@ -1,7 +1,31 @@
+import Share from "@/app/components/Share";
 import { CAREER } from "@/app/constant";
 import { activityToKorean } from "@/utils/toKorean";
+import type { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import Contacts from "./Contacts";
+
+type Props = {
+  params: Promise<{ type: keyof typeof CAREER }>;
+};
+
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const type = (await params).type;
+
+  const result = CAREER[type];
+
+  const previousImages = (await parent).openGraph?.images || [];
+
+  return {
+    title: result.title,
+    openGraph: {
+      images: [`/result/${result.image}`, ...previousImages],
+    },
+  };
+}
 
 export default async function Result({
   params,
@@ -38,6 +62,8 @@ export default async function Result({
         <p className="break-keep rounded-lg bg-base-200 px-4 py-2 text-center leading-relaxed">
           <BoldText text={result.description} />
         </p>
+
+        <Share type={type} />
 
         <div className="flex w-full flex-col items-center">
           <div className="divider font-bold text-primary">
