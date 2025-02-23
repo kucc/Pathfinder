@@ -262,7 +262,7 @@ export const QUESTION: Question[] = [
     message: "근데 그거 좀 다른 해석도 가능하지 않아?",
     options: [
       {
-        text: "그래? 내 의견을 설명해볼게! 🔥",
+        text: "그래? 내 의견의 근거를 설명해볼게! 🔥",
         behavior: {
           mbti: ["E", "J"],
           value: 3,
