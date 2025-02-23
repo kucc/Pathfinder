@@ -193,14 +193,14 @@ export const QUESTION: Question[] = [
     question: "친구들이 영화를 보러 가자고 하네. 내가 좋아하는 영화 스타일은?",
     options: [
       {
-        text: "마법, 모험, 초능력! 상상 속 세계가 너무 좋아! 🏰",
+        text: "철학적이고 상징적인 영화! 해석이 재밌어 💎",
         behavior: {
           mbti: ["N"],
           value: 3,
         },
       },
       {
-        text: "색다른 설정도 좋지만, 갑분외계인은 좀... 👽️",
+        text: "독창적인 세계관! 기존에 없던 설정이 좋아 🌟",
         behavior: {
           mbti: ["N"],
           value: 1,
@@ -234,7 +234,7 @@ export const QUESTION: Question[] = [
         },
       },
       {
-        text: "그래도 해볼 만하다 🤔",
+        text: "그래도 해볼 만한데? 🤔",
         behavior: {
           mbti: ["N", "F"],
           value: 1,
@@ -262,9 +262,9 @@ export const QUESTION: Question[] = [
     message: "근데 그거 좀 다른 해석도 가능하지 않아?",
     options: [
       {
-        text: "근거 없으면 절대 못 받아들여! 🔥",
+        text: "그래? 내 의견을 설명해볼게! 🔥",
         behavior: {
-          mbti: ["I", "J"],
+          mbti: ["E", "J"],
           value: 3,
         },
       },
@@ -278,7 +278,7 @@ export const QUESTION: Question[] = [
       {
         text: "어? 그런가? 한 번 들어본다 😇",
         behavior: {
-          mbti: ["E", "P"],
+          mbti: ["I", "P"],
           value: 1,
         },
       },
@@ -327,7 +327,7 @@ export const QUESTION: Question[] = [
   },
   {
     question: "친구가 갑자기 고민 상담을 요청했다!",
-    message: "나 헤어졌다... 지금 춘자로 와줄래?",
+    message: "나 헤어졌다... 지금 춘자로 와줄 수 있어?",
     options: [
       {
         text: "왜 헤어졌어? 이유부터 들어보고 🤔",
