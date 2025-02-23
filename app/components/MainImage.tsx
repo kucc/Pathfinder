@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CAREER } from "../constant";
 
 export default function MainImage({
@@ -13,7 +13,13 @@ export default function MainImage({
   isLoaded: boolean;
   setIsLoaded: (isLoaded: boolean) => void;
 }) {
-  const items = Object.values(CAREER).map((career) => career.image);
+  const items = useMemo(
+    () =>
+      Object.values(CAREER)
+        .sort(() => Math.random() - 0.5)
+        .map((career) => career.image),
+    [],
+  );
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
