@@ -16,7 +16,7 @@ export default function Share({ type }: { type: keyof typeof CAREER }) {
       try {
         await navigator.share({
           title: "나에게 맞는 IT 직군은?",
-          text: "고려대학교 중앙 컴퓨터 동아리 KUCC에서 나에게 맞는 IT 직군을 찾아보세요!",
+          text: `고려대학교 중앙 컴퓨터 동아리 KUCC에서 나에게 맞는 IT 직군을 찾아보세요.\n\n저는 ${type} 직군이 제일 적합해요!`,
           url: "https://kucc-pathfinder.vercel.app",
         });
       } catch (error) {
