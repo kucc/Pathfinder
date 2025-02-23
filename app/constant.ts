@@ -11,7 +11,7 @@ export const RESULT: {
   ISFJ: "data",
   ENTJ: "ai",
   INFJ: "ai",
-  ESTJ: "network",
+  ESTJ: "devops",
   INFP: "game",
   ISTP: "backend",
   INTP: "backend",
