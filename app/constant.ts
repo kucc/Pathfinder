@@ -563,7 +563,7 @@ export const CAREER: {
       "**AI 개발자**는 **컴퓨터가 스스로 학습하고 판단할 수 있도록 만드는 일**을 해요! 🤖 **딥러닝, 머신러닝**을 활용해 다양한 분야에서 **AI 모델을 개발**하는 직군이에요. 🚀",
   },
   devops: {
-    image: "/images/network.png",
+    image: "/images/devops.png",
     emoji: "🌐",
     summary: "서비스 운영과 배포를 자동화하는 전문가",
     title: "데브옵스 엔지니어",
